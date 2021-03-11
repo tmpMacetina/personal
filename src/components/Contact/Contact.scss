@@ -1,0 +1,29 @@
+.contact_section {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.contact_title {
+  width: 100%;
+  font-size: 5rem;
+  text-align: center;
+  color: #0077b5;
+  font-weight: 400;
+}
+.contact_text {
+  justify-content: space-around;
+  width: 90%;
+  flex-wrap: wrap;
+  background-color: lighten(#282c34, 2);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: lighten(#282c34, 50);
+  font-size: 2rem;
+  line-height: 2.6rem;
+  li {
+    margin-left: 2rem;
+  }
+}

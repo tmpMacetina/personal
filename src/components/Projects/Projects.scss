@@ -1,0 +1,114 @@
+.projects-dark {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  flex-wrap: wrap;
+  background-color: lighten(#282c34, 2);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+.project-dark {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 20rem;
+  width: 28rem;
+  background-color: #0077b5;
+  margin: 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  color: white;
+  font-size: 1.6rem;
+  &:hover {
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+    transform: scale(1.06);
+    background-color: darken(#0077b5, 10);
+    cursor: pointer;
+    .info-container {
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.project-img {
+  background-color: #fff;
+  height: 15rem;
+  width: 15rem;
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 1rem;
+  //  border-radius: 50%;
+  border: solid 1px white;
+  &:hover {
+    opacity: 1.1;
+  }
+}
+.info-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #0077b5;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  height: 60%;
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+}
+.info-icons {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.info-icon {
+  color: white;
+  font-size: 4rem;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.projects_title-dark {
+  width: 100%;
+  font-size: 5rem;
+  text-align: center;
+  color: #0077b5;
+  font-weight: 400;
+}
